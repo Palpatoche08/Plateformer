@@ -9,6 +9,9 @@ public class LevelParser : MonoBehaviour
     public GameObject brickPrefab;
     public GameObject questionBoxPrefab;
     public GameObject stonePrefab;
+    public GameObject flagPrefab;
+    public GameObject dangerPrefab;
+    public GameObject waterPrefab;
     public Transform environmentRoot;
 
     // --------------------------------------------------------------------------
@@ -93,6 +96,12 @@ public class LevelParser : MonoBehaviour
                 return questionBoxPrefab;
             case 's':
                 return stonePrefab;
+            case 'f':
+                return flagPrefab;
+            case 'd':
+                return dangerPrefab;
+            case 'w':
+                return waterPrefab;    
             default:
                 return null;
         }
